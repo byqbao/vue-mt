@@ -61,6 +61,15 @@
             </div>
         </div>
         <!-- 分类 -->
+
+        <!-- 专题 -->
+        <div class="index-special">
+            <a href="#"><img src="../assets/special_01.jpg" alt="专题"></a>
+            <a href="#"><img src="../assets/special_02.jpg" alt="专题"></a>
+            <a href="#"><img src="../assets/special_03.jpg" alt="专题"></a>
+            <a href="#"><img src="../assets/special_04.jpg" alt="专题"></a>
+        </div>
+        <!-- 专题 -->
     </div>
 </template>
 
@@ -233,4 +242,23 @@ export default {
     .index-clssub .icon-js { background-image: url("../assets/icon_cls_js.jpg"); }
     .index-clssub .icon-qb { background-image: url("../assets/icon_cls_qb.jpg"); }
     /*分类*/
+
+    /*专题*/
+    .index-special {
+        overflow: hidden;
+        padding: 0.26rem 0.29rem;
+        border-bottom: 0.3rem solid #f4f4f4;
+    }
+    .index-special a {
+        float: left;
+        display: block;
+        width: 5.74rem;
+        height: 3.8rem;
+        margin: 0.09rem;
+    }
+    .index-special img {
+        display: block;
+        width: 100%;
+    }
+    /*专题*/
 </style>
