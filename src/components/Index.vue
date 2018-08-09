@@ -70,6 +70,77 @@
             <a href="#"><img src="../assets/special_04.jpg" alt="专题"></a>
         </div>
         <!-- 专题 -->
+
+        <!-- 广告 -->
+        <div class="index-advert">
+            <a href="#"><img src="../assets/advert_01.jpg" alt="广告"></a>
+        </div>
+        <!-- 广告 -->
+
+        <!-- 猜你喜欢 -->
+        <div class="index-like">
+            <h3 class="index-liketit"><span class="tit">猜你喜欢</span><span class="line"></span></h3>
+            <ul class="index-likelis">
+                <li>
+                    <a href="#">
+                        <img class="index-likelis-img" src="../assets/like_01.jpg" alt="商品">
+                        <div class="index-likeli-txt">
+                            <h4 class="index-likelis-tit">元气少女<span class="index-likelis-distance">12.9km</span></h4>
+                            <p class="index-likelis-des">[朝外大街/世贸天阶] 单人洗浴</p>
+                            <p class="index-likelis-pricebox"><em>￥</em><strong class="index-likelis-price">78</strong><span class="index-likelis-num">已售2452</span></p>
+                            <p class="index-likelis-discount"><span>4.5折</span></p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="index-likelis-img" src="../assets/like_01.jpg" alt="商品">
+                        <div class="index-likeli-txt">
+                            <h4 class="index-likelis-tit">元气少女<span class="index-likelis-distance">12.9km</span></h4>
+                            <p class="index-likelis-des">[朝外大街/世贸天阶] 单人洗浴</p>
+                            <p class="index-likelis-pricebox"><em>￥</em><strong class="index-likelis-price">78</strong><span class="index-likelis-num">已售2452</span></p>
+                            <p class="index-likelis-discount"><span>4.5折</span></p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="index-likelis-img" src="../assets/like_01.jpg" alt="商品">
+                        <div class="index-likeli-txt">
+                            <h4 class="index-likelis-tit">元气少女<span class="index-likelis-distance">12.9km</span></h4>
+                            <p class="index-likelis-des">[朝外大街/世贸天阶] 单人洗浴</p>
+                            <p class="index-likelis-pricebox"><em>￥</em><strong class="index-likelis-price">78</strong><span class="index-likelis-num">已售2452</span></p>
+                            <p class="index-likelis-discount"><span>4.5折</span></p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img class="index-likelis-img" src="../assets/like_01.jpg" alt="商品">
+                        <div class="index-likeli-txt">
+                            <h4 class="index-likelis-tit">元气少女<span class="index-likelis-distance">12.9km</span></h4>
+                            <p class="index-likelis-des">[朝外大街/世贸天阶] 单人洗浴</p>
+                            <p class="index-likelis-pricebox"><em>￥</em><strong class="index-likelis-price">78</strong><span class="index-likelis-num">已售2452</span></p>
+                            <p class="index-likelis-discount"><span>4.5折</span></p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 猜你喜欢 -->
+
+        <!-- 底部 -->
+        <div class="index-foot">
+            <ul>
+                <li class="index-footact"><a class="icon-foot-home" href="#">首页</a></li>
+                <li><a class="icon-foot-enclosure" href="#">附件</a></li>
+                <li><a class="icon-foot-find" href="#">发现</a></li>
+                <li><a class="icon-foot-order" href="#">订单</a></li>
+                <li><a class="icon-foot-me" href="#">我的</a></li>
+            </ul>
+        </div>
+        <!-- 底部 -->
+
     </div>
 </template>
 
@@ -93,6 +164,10 @@ export default {
     }
     a {
         text-decoration: none;
+    }
+    ul,li,h3,h4,p {
+        margin: 0;
+        padding: 0;
     }
 
     /*顶部搜索*/
@@ -198,6 +273,7 @@ export default {
         font-size: 0.36rem;
         padding: 0.66rem 0 0 0;
         border-bottom: 0.3rem solid #f4f4f4;
+        text-align: center;
     }
     /*主分类*/
     .index-clsmain {
@@ -261,4 +337,156 @@ export default {
         width: 100%;
     }
     /*专题*/
+
+    /*广告*/
+    .index-advert {
+        border-bottom: 0.3rem solid #f4f4f4;
+    }
+    .index-advert a {
+        display: block;
+    }
+    .index-advert img {
+        display: block;
+        width: 100%;
+    }
+    /*广告*/
+
+    /*猜你喜欢*/
+    .index-like {
+        padding: 0 0.38rem;
+        border-bottom: 1.68rem solid #f4f4f4;
+    }
+    .index-liketit {
+        width: 100%;
+        height: 1.3rem;
+        line-height: 1.3rem;
+        border-bottom: 0.01rem solid #e5e5e5;
+        color: #999999;
+        font-size: 0.36rem;
+        position: relative;
+        text-align: center;
+    }
+    .index-liketit .tit {
+        position: relative;
+        z-index: 2;
+        background:#fff;
+        padding: 0 0.28rem;
+    }
+    .line {
+        display: block;
+        width: 2.8rem;
+        height: 1px;
+        background: #979797;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        margin: 0 0 0 -1.4rem;
+    }
+    .index-likelis {
+    }
+    .index-likelis li {
+        display: block;
+        border-bottom: 1px solid #ececec;
+    }
+    .index-likelis a {
+        display: block;
+        padding: 0.46rem 0 0.52rem;
+    }
+    .index-likelis-img {
+        float: left;
+        width: 2.64rem;
+        height: 2.64rem;
+    }
+    .index-likeli-txt {
+        margin-left: 3rem;
+    }
+    .index-likelis-tit {
+        font-size: 0.48rem;
+        color: #333;
+        margin-bottom: 0.3rem;
+        line-height: 0.48rem;
+    }
+    .index-likelis-distance {
+        float: right;
+        color: #6b6b6b;
+        font-weight: 500;
+        font-size: 0.28rem;
+    }
+    .index-likelis-des {
+        font-size: 0.38rem;
+        color: #6b6b6b;
+        margin-bottom: 0.3rem;
+    }
+    .index-likelis-pricebox {
+        font-size: 0.38rem;
+        margin-bottom: 0.24rem;
+    }
+    .index-likelis-pricebox em {
+        font-size: 0.28rem;
+        color: #ed702d;
+        font-weight: bold;
+    }
+    .index-likelis-price {
+        font-size: 0.44rem;
+        color: #ed702d;
+        font-weight: bold;
+    }
+    .index-likelis-num {
+        color: #6b6b6b;
+        font-size: 0.36rem;
+        float: right;
+    }
+    .index-likelis-discount {
+        font-size: 0.3rem;
+    }
+    .index-likelis-discount span {
+        font-size: 0.3rem;
+        display: inline-block;
+        background: #fdf5d5;
+        border: 1px solid #f6cdc9;
+        padding: 0.04rem 0.16rem;
+        -webkit-border-radius: 0.17rem;
+        -moz-border-radius: 0.17rem;
+        border-radius: 0.06rem;
+        color: #e85b4d;
+    }
+
+    /*猜你喜欢*/
+
+    /*底部*/
+    .index-foot {
+        width: 100%;
+        height: 1.47rem;
+        border-top: 1px solid #e5e5e5;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background-image:-webkit-linear-gradient(to right, #fbf6f5,#ffffff);
+        background-image:linear-gradient(to right, #fbf6f5,#ffffff);
+    }
+    .index-foot ul {}
+    .index-foot li {
+        float: left;
+        width: 20%;
+        list-style: none;
+    }
+    .index-foot a {
+        display: block;
+        height: 0.41rem;
+        text-align: center;
+        padding-top: 0.96rem;
+        background: no-repeat center 0;
+        background-size: 0.92rem 0.9rem;
+        font-size: 0.28rem;
+        color: #a09e97;
+    }
+    .index-foot .icon-foot-home { background-image: url("../assets/icon_foot_01.jpg"); }
+    .index-foot .icon-foot-enclosure { background-image: url("../assets/icon_foot_02.jpg"); }
+    .index-foot .icon-foot-find { background-image: url("../assets/icon_foot_03.jpg"); }
+    .index-foot .icon-foot-order { background-image: url("../assets/icon_foot_04.jpg"); }
+    .index-foot .icon-foot-me { background-image: url("../assets/icon_foot_05.jpg"); }
+    .index-foot .index-footact a {
+        color: #55b4a5;
+    }
+    /*底部*/
 </style>
