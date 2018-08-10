@@ -114,9 +114,9 @@
         <!-- 底部 -->
         <div class="index-foot">
             <ul>
-                <li><a class="icon-foot-home" href="#">首页</a></li>
-                <li class="index-footact"><a class="icon-foot-enclosure-on" href="#">附件</a></li>
-                <li><a class="icon-foot-find" href="#">发现</a></li>
+                <li><a class="icon-foot-home" href="#" @click="go('/')">首页</a></li>
+                <li class="index-footact"><a class="icon-foot-enclosure-on" href="#" @click="go('/nearby')">附近</a></li>
+                <li><a class="icon-foot-find" href="#" @click="go('/find')">发现</a></li>
                 <li><a class="icon-foot-order" href="#">订单</a></li>
                 <li><a class="icon-foot-me" href="#">我的</a></li>
             </ul>
@@ -126,7 +126,18 @@
 </template>
 
 <script>
-	
+export default {
+    name: 'Nearby',
+    data () {
+        return {
+        }
+    },
+    methods: {
+        go(path) {
+            this.$router.push(path);
+        }
+    }
+}
 </script>
 
 <style scoped>
