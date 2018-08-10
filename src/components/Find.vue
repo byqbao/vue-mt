@@ -32,7 +32,7 @@
 					</div>
 					<div class="cls-box">
 						<h4>厨房的生活</h4>
-						<span><i></i>1.4万人看过</span>
+						<span><i class="icon-look"></i>1.4万人看过</span>
 					</div>
 				</li>
 				<li>
@@ -44,7 +44,7 @@
 					</div>
 					<div class="cls-box">
 						<h4>厨房的生活</h4>
-						<span><i></i>1.4万人看过</span>
+						<span><i class="icon-look"></i>1.4万人看过</span>
 					</div>
 				</li>
 				<li>
@@ -56,7 +56,7 @@
 					</div>
 					<div class="cls-box">
 						<h4>厨房的生活</h4>
-						<span><i></i>1.4万人看过</span>
+						<span><i class="icon-look"></i>1.4万人看过</span>
 					</div>
 				</li>
 				<li>
@@ -68,7 +68,7 @@
 					</div>
 					<div class="cls-box">
 						<h4>厨房的生活</h4>
-						<span><i></i>1.4万人看过</span>
+						<span><i class="icon-look"></i>1.4万人看过</span>
 					</div>
 				</li>
 			</ul>
@@ -78,9 +78,9 @@
 		<!-- 底部 -->
         <div class="index-foot">
             <ul>
-                <li class="index-footact"><a class="icon-foot-home" href="#" @click="go('/')">首页</a></li>
+                <li><a class="icon-foot-home" href="#" @click="go('/')">首页</a></li>
                 <li><a class="icon-foot-enclosure" href="#" @click="go('/nearby')">附件</a></li>
-                <li><a class="icon-foot-find" href="#" @click="go('/find')">发现</a></li>
+                <li class="index-footact"><a class="icon-foot-find" href="#" @click="go('/find')">发现</a></li>
                 <li><a class="icon-foot-order" href="#">订单</a></li>
                 <li><a class="icon-foot-me" href="#">我的</a></li>
             </ul>
@@ -179,6 +179,17 @@ export default {
 		margin-right: 0.42rem;
 	}
 	.content .cls-box span {}
+	.icon-look {
+		display: inline-block;
+		width: 0.36rem;
+		height: 0.3rem;
+		background: url("../assets/icon_look.png") no-repeat center;
+		background-size: 0.36rem 0.3rem;
+		vertical-align: middle;
+		position: relative;
+	    top: -1px;
+	    margin-right: 0.1rem;
+	}
 	/*内容列表*/
 
 	/*底部*/
@@ -208,9 +219,9 @@ export default {
         font-size: 0.28rem;
         color: #a09e97;
     }
-    .index-foot .icon-foot-home { background-image: url("../assets/icon_foot_01.jpg"); }
+    .index-foot .icon-foot-home { background-image: url("../assets/icon_foot_on_01.png"); }
     .index-foot .icon-foot-enclosure { background-image: url("../assets/icon_foot_02.jpg"); }
-    .index-foot .icon-foot-find { background-image: url("../assets/icon_foot_03.jpg"); }
+    .index-foot .icon-foot-find { background-image: url("../assets/icon_foot_on_03.png"); }
     .index-foot .icon-foot-order { background-image: url("../assets/icon_foot_04.jpg"); }
     .index-foot .icon-foot-me { background-image: url("../assets/icon_foot_05.jpg"); }
     .index-foot .index-footact a {
