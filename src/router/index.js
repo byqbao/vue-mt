@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Index from '@/components/Index'
 import Start from '@/components/Start'
 import Nearby from '@/components/Nearby'
+import Find from '@/components/Find'
 
 Vue.use(Router)
 
@@ -20,6 +21,10 @@ export default new Router({
 	    	path: '/nearby',
 	      	name: 'Nearby',
 	      	component: Nearby
+	    },{
+	    	path: '/find',
+	      	name: 'Find',
+	      	component: Find
 	    }
   	]
 })
