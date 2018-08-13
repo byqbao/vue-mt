@@ -133,7 +133,7 @@
         <div class="index-foot">
             <ul>
                 <li class="index-footact"><a class="icon-foot-home" href="#" @click="go('/')">首页</a></li>
-                <li><a class="icon-foot-enclosure" href="#" @click="go('/nearby')">附件</a></li>
+                <li><a class="icon-foot-enclosure" href="#" @click="go('/nearby')">附近</a></li>
                 <li><a class="icon-foot-find" href="#" @click="go('/find')">发现</a></li>
                 <li><a class="icon-foot-order" href="#">订单</a></li>
                 <li><a class="icon-foot-me" href="#">我的</a></li>
