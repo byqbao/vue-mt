@@ -64,11 +64,11 @@
 		<!-- 底部 -->
         <div class="index-foot">
             <ul>
-                <li class="index-footact"><a class="icon-foot-home" href="#" @click="go('/')">首页</a></li>
+                <li><a class="icon-foot-home" href="#" @click="go('/')">首页</a></li>
                 <li><a class="icon-foot-enclosure" href="#" @click="go('/nearby')">附近</a></li>
                 <li><a class="icon-foot-find" href="#" @click="go('/find')">发现</a></li>
                 <li><a class="icon-foot-order" href="#" @click="go('/order')">订单</a></li>
-                <li><a class="icon-foot-me" href="#">我的</a></li>
+                <li class="index-footact"><a class="icon-foot-me" href="#" @click="go('/me')">我的</a></li>
             </ul>
         </div>
         <!-- 底部 -->
@@ -263,11 +263,11 @@ export default {
         font-size: 0.28rem;
         color: #a09e97;
     }
-    .index-foot .icon-foot-home { background-image: url("../assets/icon_foot_01.jpg"); }
+    .index-foot .icon-foot-home { background-image: url("../assets/icon_foot_on_01.png"); }
     .index-foot .icon-foot-enclosure { background-image: url("../assets/icon_foot_02.jpg"); }
     .index-foot .icon-foot-find { background-image: url("../assets/icon_foot_03.jpg"); }
     .index-foot .icon-foot-order { background-image: url("../assets/icon_foot_04.jpg"); }
-    .index-foot .icon-foot-me { background-image: url("../assets/icon_foot_05.jpg"); }
+    .index-foot .icon-foot-me { background-image: url("../assets/icon_foot_on_05.png"); }
     .index-foot .index-footact a {
         color: #55b4a5;
     }

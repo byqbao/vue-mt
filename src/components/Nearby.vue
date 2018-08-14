@@ -118,7 +118,7 @@
                 <li class="index-footact"><a class="icon-foot-enclosure-on" href="#" @click="go('/nearby')">附近</a></li>
                 <li><a class="icon-foot-find" href="#" @click="go('/find')">发现</a></li>
                 <li><a class="icon-foot-order" href="#" @click="go('/order')">订单</a></li>
-                <li><a class="icon-foot-me" href="#">我的</a></li>
+                <li><a class="icon-foot-me" href="#" @click="go('/me')">我的</a></li>
             </ul>
         </div>
         <!-- 底部 -->
