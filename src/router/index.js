@@ -5,6 +5,7 @@ import Start from '@/components/Start'
 import Nearby from '@/components/Nearby'
 import Find from '@/components/Find'
 import Order from '@/components/Order'
+import Me from '@/components/Me'
 
 Vue.use(Router)
 
@@ -30,6 +31,10 @@ export default new Router({
 	    	path: '/order',
 	      	name: 'Order',
 	      	component: Order
+	    },{
+	    	path: '/me',
+	      	name: 'Me',
+	      	component: Me
 	    }
   	]
 })
