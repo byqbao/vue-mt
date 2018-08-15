@@ -39,7 +39,7 @@
         <div class="index-cls">
             <!-- 主分类 -->
             <div class="index-clsmain">
-                <a href="#">美食</a>
+                <a href="#" @click="go('/food')">美食</a>
                 <a class="icon-dy" href="#">电影/演出</a>
                 <a class="icon-jd" href="#">酒店住宿</a>
                 <a class="icon-yl" href="#">休闲娱乐</a>
@@ -257,6 +257,7 @@ export default {
         width: 100%;
         height: 0.2rem;
         font-size: 0;
+        text-align: center;
     }
     .index-bannernum a {
         display: inline-block;

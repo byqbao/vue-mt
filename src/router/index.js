@@ -6,6 +6,7 @@ import Nearby from '@/components/Nearby'
 import Find from '@/components/Find'
 import Order from '@/components/Order'
 import Me from '@/components/Me'
+import Food from '@/components/Food'
 
 Vue.use(Router)
 
@@ -35,6 +36,10 @@ export default new Router({
 	    	path: '/me',
 	      	name: 'Me',
 	      	component: Me
+	    },{
+	    	path: '/food',
+	      	name: 'Food',
+	      	component: Food
 	    }
   	]
 })

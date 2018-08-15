@@ -104,7 +104,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 	/*顶部标题*/
 	.head {}
 	.head h1 {
