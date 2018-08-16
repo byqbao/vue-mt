@@ -25,20 +25,91 @@
 
         <!-- 分类卡片 -->
         <div class="card">
-        	<div class="item">
-        		<h2 class="changered">实时票房</h2>
-        		<h3>即时更新</h3>
-        	</div>
-        	<div class="item">
-        		<h2 class="changeyellow">领券中心</h2>
-        		<h3>优惠享不停</h3>
-        	</div>
-        	<div class="item">
-        		<h2 class="changepurple">抓娃娃</h2>
-        		<h3>正版免费抓</h3>
+        	<div class="content">
+	        	<div class="item">
+	        		<h2 class="changered">实时票房</h2>
+	        		<h3>即时更新</h3>
+	        	</div>
+	        	<div class="item">
+	        		<h2 class="changeyellow">领券中心</h2>
+	        		<h3>优惠享不停</h3>
+	        	</div>
+	        	<div class="item">
+	        		<h2 class="changepurple">抓娃娃</h2>
+	        		<h3>正版免费抓</h3>
+	        	</div>
         	</div>
         </div>
         <!-- 分类卡片 -->
+
+        <!-- 热门电影 -->
+        <div class="hot">
+        	<div class="title">
+        		<h2>热门影片</h2>
+        		<a class="lookall" href="#">查看全部<span class="icon icon-sm icon-all"></span></a>
+        	</div>
+        	<div class="content">
+        		<div class="slide">
+	        		<ul>
+	        			<li>
+	        				<a href="#">
+	        					<div class="img-box">
+		        					<img src="../assets/movie_img02.jpg" alt="">
+		        					<p class="eval">8.2分</p>
+	        					</div>
+	        					<h3>一出好戏</h3>
+	        				</a>
+	        			</li>
+	        			<li>
+	        				<a href="#">
+	        					<div class="img-box">
+		        					<img src="../assets/movie_img02.jpg" alt="">
+		        					<p class="eval">8.2分</p>
+	        					</div>
+	        					<h3>一出好戏</h3>
+	        				</a>
+	        			</li>
+	        			<li>
+	        				<a href="#">
+	        					<div class="img-box">
+		        					<img src="../assets/movie_img02.jpg" alt="">
+		        					<p class="eval">8.2分</p>
+	        					</div>
+	        					<h3>一出好戏</h3>
+	        				</a>
+	        			</li>
+	        			<li>
+	        				<a href="#">
+	        					<div class="img-box">
+		        					<img src="../assets/movie_img02.jpg" alt="">
+		        					<p class="eval">8.2分</p>
+	        					</div>
+	        					<h3>一出好戏</h3>
+	        				</a>
+	        			</li>
+	        			<li>
+	        				<a href="#">
+	        					<div class="img-box">
+		        					<img src="../assets/movie_img02.jpg" alt="">
+		        					<p class="eval">8.2分</p>
+	        					</div>
+	        					<h3>一出好戏</h3>
+	        				</a>
+	        			</li>
+	        			<li>
+	        				<a href="#">
+	        					<div class="img-box">
+		        					<img src="../assets/movie_img02.jpg" alt="">
+		        					<p class="eval">8.2分</p>
+	        					</div>
+	        					<h3>一出好戏</h3>
+	        				</a>
+	        			</li>
+	        		</ul>
+        		</div>
+        	</div>
+        </div>
+        <!-- 热门电影 -->
 	</div>
 </template>
 
@@ -164,8 +235,10 @@
     .card {
     	overflow: hidden;
     	padding: 0 .3rem;
-    	margin-right: -.24rem;
     	margin-bottom: .74rem;
+    }
+    .card .content {
+    	margin-right: -.24rem;
     }
     .card .item {
     	float: left;
@@ -212,5 +285,74 @@
     	margin-bottom: .36rem;
     }
     /*分类卡片*/
+
+    /*热门影片*/
+    .hot {
+    	border-bottom: .33rem solid #f0efed;
+    }
+    .hot .title {
+    	overflow: hidden;
+    	margin: 0 .36rem .36rem;
+    }
+    .hot .title h2{
+    	color: #333;
+    	font-size: .42rem;
+    	line-height: 1.2;
+    	float: left;
+    }
+    .hot .title .lookall {
+    	color: #a1a1a1;
+    	font-size: .34rem;
+    	float: right;
+    }
+    .hot .content {
+    	/*padding-left: .3rem;*/
+    }
+    .hot .slide {
+    	overflow-x: scroll;
+    	margin-left: .3rem;
+    }
+    .hot .content ul {
+    	overflow: hidden;
+    	width: 1000%;
+    }
+    .hot .content li {
+    	float: left;
+    	margin-right: .24rem;
+    }
+    .hot .content a {
+    	display: block;
+    }
+    .hot .content .img-box {
+    	position: relative;
+    	margin-bottom: .28rem;
+    }
+    .hot .content .img-box img {
+    	display: block;
+    	width: 2.61rem;
+    	height: 3.66rem;
+    }
+    .hot .content .eval {
+    	font-size: .34rem;
+    	color: #fd9800;
+    	position: absolute;
+    	bottom: .14rem;
+    	left: .14rem;
+    }
+    .hot .content h3 {
+    	font-size: .4rem;
+    	color: #222;
+    	margin-bottom: .38rem;
+    }
+    .icon-all {
+    	background-position: -1.5rem -6rem;
+    	display: inline-block;
+    	vertical-align: text-bottom;
+    }
+    .icon-sm {
+    	width: .5rem;
+    	height: .5rem;
+    }
+    /*热门影片*/
 
 </style>
