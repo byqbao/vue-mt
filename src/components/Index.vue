@@ -40,7 +40,7 @@
             <!-- 主分类 -->
             <div class="index-clsmain">
                 <a href="#" @click="go('/food')">美食</a>
-                <a class="icon-dy" href="#">电影/演出</a>
+                <a class="icon-dy" href="#" @click="go('/movie')">电影/演出</a>
                 <a class="icon-jd" href="#">酒店住宿</a>
                 <a class="icon-yl" href="#">休闲娱乐</a>
                 <a class="icon-wm" href="#">外卖</a>
