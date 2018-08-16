@@ -99,6 +99,50 @@
        		</div>
        	</div>
         <!-- 特价 -->
+
+        <!-- 商品列表 -->
+        <div class="goods">
+        	<div class="title">
+        		<div class="tit-item">全部<span class="icon-drop"></span></div>
+        		<div class="tit-item">附近<span class="icon-drop"></span></div>
+        		<div class="tit-item">智能排序<span class="icon-drop"></span></div>
+        		<div class="tit-item">筛选<span class="icon-drop"></span></div>
+        	</div>
+        	<div class="content">
+        		<div class="index-like">
+		            <ul class="index-likelis">
+		                <li>
+		                    <a href="#">
+		                        <img class="index-likelis-img" src="../assets/shop_01.jpg" alt="商品">
+		                        <div class="index-likeli-txt">
+		                            <h4 class="index-likelis-tit">老陕小馆<span class="icon-wai"></span></h4>
+		                            <p class="star-box"><span class="star-on"></span><span class="star-on"></span><span class="star-on"></span><span class="star-on"></span><span class="star-off"></span><span class="index-likelis-distance">465m</span></p>
+		                            <p class="pos"><span>五道口</span> | <span>快餐</span><span class="pop">当前人气76</span></p>
+		                            <p class="labs"><span>新店特惠</span></p>
+		                            <p class="index-likelis-des"><i class="icon-tuan"></i>18店内爆款，19.8元店长推荐套餐，21.8元老陕特色套餐，双人餐103.8起</p>
+		                            <p class="index-likelis-des"><i class="icon-vouch"></i>27代30</p>
+		                        </div>
+		                    </a>
+		                </li>
+		                <li>
+		                    <a href="#">
+		                        <img class="index-likelis-img" src="../assets/shop_01.jpg" alt="商品">
+		                        <div class="index-likeli-txt">
+		                            <h4 class="index-likelis-tit">老陕小馆<span class="icon-wai"></span></h4>
+		                            <p class="star-box"><span class="star-on"></span><span class="star-on"></span><span class="star-on"></span><span class="star-on"></span><span class="star-off"></span><span class="index-likelis-distance">465m</span></p>
+		                            <p class="pos"><span>五道口</span> | <span>快餐</span><span class="pop">当前人气76</span></p>
+		                            <p class="labs"><span>新店特惠</span></p>
+		                            <p class="index-likelis-des"><i class="icon-vouch"></i>27代30</p>
+		                        </div>
+		                    </a>
+		                </li>
+		            </ul>
+		        </div>
+        	</div>
+        </div>
+        <!-- 商品列表 -->
+
+
 	</div>
 </template>
 
@@ -244,6 +288,7 @@
 	/*特价*/
 	.spec {
 		padding: .3rem .33rem .3rem .36rem;
+		border-bottom: .3rem solid #f4f4f4;
 	}
 	.spec-list {
 		overflow: hidden;
@@ -304,7 +349,8 @@
 		margin-right: .15rem;
 		margin-top: .15rem;
 		background: #f66;
-		float:;
+		padding-bottom: .3rem;
+	    float: initial;
 	}
 	.side-item .spec-img {
 		width: 3.42rem;
@@ -327,6 +373,9 @@
 	.side-item .disc-box {
 		border-color: #fff;
 		margin-bottom: 0;
+	}
+	.side-item a {
+		overflow: hidden;
 	}
 	.side-item .disc-box span {
 		color: #fff;
@@ -355,4 +404,207 @@
 		border-radius: .08rem;
 	}
 	/*特价*/
+
+	/*商品列表*/
+	.goods {
+		padding: .46rem 0 0 0;
+		font-size: .4rem;
+		color: #666;
+	}
+	.goods .title {
+		overflow: hidden;
+		margin: 0 0 .16rem;
+	}
+	.goods .tit-item {
+		float: left;
+		width: 25%;
+		text-align: center;
+	}
+	.icon-drop {
+		display: inline-block;
+		width: .5rem;
+		height: .5rem;
+		background: url("../assets/icon.png") no-repeat -.5rem -6rem;
+		background-size: 10rem 10rem;
+		vertical-align: middle;
+		margin-left: .06rem;
+	}
+
+	/*商品列表*/
+    .index-like {
+        padding: 0 0.38rem;
+    }
+    .index-liketit {
+        width: 100%;
+        height: 1.3rem;
+        line-height: 1.3rem;
+        border-bottom: 0.01rem solid #e5e5e5;
+        color: #999999;
+        font-size: 0.36rem;
+        position: relative;
+        text-align: center;
+    }
+    .index-liketit .tit {
+        position: relative;
+        z-index: 2;
+        background:#fff;
+        padding: 0 0.28rem;
+    }
+    .line {
+        display: block;
+        width: 2.8rem;
+        height: 1px;
+        background: #979797;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        margin: 0 0 0 -1.4rem;
+    }
+    .index-likelis {
+    }
+    .index-likelis li {
+        display: block;
+        border-bottom: 1px solid #ececec;
+    }
+    .index-likelis a {
+        display: block;
+        padding: 0.46rem 0 0.52rem;
+    }
+    .index-likelis-img {
+        float: left;
+        width: 2.4rem;
+        height: 1.8rem;
+    }
+    .index-likeli-txt {
+        margin-left: 3rem;
+    }
+    .index-likeli-txt .pos {
+    	font-size: .34rem;
+    	color: #666;
+    	margin-bottom: .31rem;
+    }
+    .index-likeli-txt .pos span {}
+    .index-likeli-txt .pop {
+    	float: right;
+    	color: #f2a23c;
+    }
+    .index-likeli-txt .labs {
+    	font-size: .3rem;
+    	color: #9c9b9c;
+    }
+    .index-likeli-txt .labs span {
+    	display: inline-block;
+    	border: 1px solid #cacaca;
+    	padding: .05rem .08rem;
+    	border-radius: .06rem;
+    	margin-right: .15rem;
+    	margin-bottom: .45rem;
+    }
+    .index-likelis-tit {
+        font-size: 0.42rem;
+        color: #333;
+        margin-bottom: 0.3rem;
+        line-height: 0.48rem;
+    }
+    .icon-wai {
+    	display: inline-block;
+    	width: .5rem;
+    	height: .5rem;
+    	background: url("../assets/icon.png") no-repeat -1rem -6rem;
+    	background-size: 10rem 10rem;
+    	vertical-align: middle;
+    	margin-left: .2rem;
+    }
+    .index-likelis-distance {
+        float: right;
+        color: #6b6b6b;
+        font-weight: 500;
+        font-size: 0.28rem;
+        color: #7a7a7b;
+    }
+    .index-likelis-des {
+        font-size: 0.34rem;
+        color: #6b6b6b;
+        margin-bottom: 0.3rem;
+    	line-height: 0.6rem;
+    }
+    .index-likelis-pricebox {
+        font-size: 0.38rem;
+        margin-bottom: 0.24rem;
+    }
+    .index-likelis-pricebox em {
+        font-size: 0.28rem;
+        color: #ed702d;
+        font-weight: bold;
+    }
+    .index-likelis-price {
+        font-size: 0.44rem;
+        color: #ed702d;
+        font-weight: bold;
+    }
+    .index-likelis-num {
+        color: #6b6b6b;
+        font-size: 0.36rem;
+        float: right;
+    }
+    .index-likelis-discount {
+        font-size: 0.3rem;
+    }
+    .index-likelis-discount span {
+        font-size: 0.3rem;
+        display: inline-block;
+        background: #fdf5d5;
+        border: 1px solid #f6cdc9;
+        padding: 0.04rem 0.16rem;
+        -webkit-border-radius: 0.17rem;
+        -moz-border-radius: 0.17rem;
+        border-radius: 0.06rem;
+        color: #e85b4d;
+    }
+    .star-box {
+    	overflow: hidden;
+    	margin-bottom: 0.38rem;
+    }
+    .star-box span {
+    	margin-right: 0.06rem;
+    }
+    .star-on{
+    	display: block;
+    	float: left;
+    	width: 0.27rem;
+    	height: 0.28rem;
+    	background: url("../assets/icon_star.png") no-repeat center;
+    	background-size: 0.27rem 0.28rem;
+    }
+    .star-off{
+    	display: block;
+    	float: left;
+    	width: 0.27rem;
+    	height: 0.28rem;
+    	background: url("../assets/icon_star_off.png") no-repeat center;
+    	background-size: 0.27rem 0.28rem;
+    }
+    .icon-tuan {
+    	display: inline-block;
+    	width: 0.45rem;
+    	height: 0.46rem;
+    	background: url("../assets/icon_tuan.png") no-repeat center;
+    	background-size: 0.45rem 0.46rem;
+    	vertical-align: middle;
+    	margin-right: 0.18rem;
+    	position: relative;
+    	top: -2px;
+    }
+    .icon-vouch {
+    	display: inline-block;
+    	width: 0.45rem;
+    	height: 0.46rem;
+    	background: url("../assets/icon_vouch.png") no-repeat center;
+    	background-size: 0.45rem 0.46rem;
+    	vertical-align: middle;
+    	margin-right: 0.18rem;
+    	position: relative;
+    	top: -2px;
+    }
+	/*商品列表*/
 </style>
