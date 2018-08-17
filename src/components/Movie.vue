@@ -110,6 +110,47 @@
         	</div>
         </div>
         <!-- 热门电影 -->
+
+        <!-- 商品列表 -->
+        <div class="goods">
+        	<div class="title">
+        		<div class="tit-item">全部<span class="icon-drop"></span></div>
+        		<div class="tit-item">附近<span class="icon-drop"></span></div>
+        		<div class="tit-item">智能排序<span class="icon-drop"></span></div>
+        		<div class="tit-item">筛选<span class="icon-drop"></span></div>
+        	</div>
+        	<div class="content">
+        		<div class="like">
+		            <ul class="likelis">
+		                <li>
+		                    <a href="#">
+		                        <div class="likeli-txt">
+		                            <h4 class="likelis-tit">嘉华国际影城<span class="likelis-distance">465m</span></h4>
+		                            <p class="price-box"><span class="price">￥29起</span><span class="lab yel">小吃</span><span class="lab blu">巨幕厅</span></p>
+		                        </div>
+		                    </a>
+		                </li>
+		                <li>
+		                    <a href="#">
+		                        <div class="likeli-txt">
+		                            <h4 class="likelis-tit">嘉华国际影城<span class="likelis-distance">465m</span></h4>
+		                            <p class="price-box"><span class="price">￥29起</span><span class="lab yel">小吃</span><span class="lab blu">巨幕厅</span></p>
+		                        </div>
+		                    </a>
+		                </li>
+		                <li>
+		                    <a href="#">
+		                        <div class="likeli-txt">
+		                            <h4 class="likelis-tit">嘉华国际影城<span class="likelis-distance">465m</span></h4>
+		                            <p class="price-box"><span class="price">￥29起</span><span class="lab yel">小吃</span><span class="lab blu">巨幕厅</span></p>
+		                        </div>
+		                    </a>
+		                </li>
+		            </ul>
+		        </div>
+        	</div>
+        </div>
+        <!-- 商品列表 -->
 	</div>
 </template>
 
@@ -354,5 +395,83 @@
     	height: .5rem;
     }
     /*热门影片*/
+
+    /*商品列表*/
+	.goods {
+		font-size: .4rem;
+		color: #666;
+	}
+	.goods .title {
+		overflow: hidden;
+		margin: 0 0 .16rem;
+		padding: .29rem 0;
+		margin-right: -1px;
+		border-bottom: 1px solid #d8d8d8;
+	}
+	.goods .tit-item {
+		float: left;
+		width: 25%;
+		text-align: center;
+		border-right: 1px solid #d8d8d8;
+		box-sizing: border-box;
+	}
+	.icon-drop {
+		display: inline-block;
+		width: .5rem;
+		height: .5rem;
+		background: url("../assets/icon.png") no-repeat -.5rem -6rem;
+		background-size: 10rem 10rem;
+		vertical-align: middle;
+		margin-left: .06rem;
+	}
+
+    .like {}
+    .likelis {
+	    margin-top: -7px;
+    }
+    .likelis li {
+
+    }
+    .likelis a {
+    	display: block;
+    	padding: .54rem .48rem .58rem .4rem;
+    	border-top: 1px solid #d8d8d8;
+    }
+    .likeli-txt {}
+    .likelis-tit {
+    	font-size: .44rem;
+    	color: #000;
+    	margin-bottom: .4rem;
+    }
+    .likelis-distance {
+    	float: right;
+    	font-size: .26rem;
+    	color: #999;
+    }
+    .price-box {}
+    .price {
+    	font-size: .4rem;
+    	color: #03c1ae;
+    	font-weight: bold;
+    	margin-right: .18rem;
+    }
+    .lab {
+    	display: inline-block;
+    	padding: .08rem;
+    	border: 1px solid #ccc;
+    	border-radius: .06rem;
+    	margin-right: .15rem;
+    	font-size: .28rem;
+    	color: #ccc;
+    }
+    .yel {
+    	border-color: #ff9900;
+    	color: #ff9900;
+    }
+    .blu {
+    	border-color: #6dbd05;
+    	color: #6dbd05;
+    }
+	/*商品列表*/
 
 </style>
