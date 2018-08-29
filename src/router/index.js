@@ -8,6 +8,7 @@ import Order from '@/components/Order'
 import Me from '@/components/Me'
 import Food from '@/components/Food'
 import Movie from '@/components/Movie'
+import Hotel from '@/components/Hotel'
 
 Vue.use(Router)
 
@@ -45,6 +46,10 @@ export default new Router({
 	    	path: '/movie',
 	      	name: 'Movie',
 	      	component: Movie
+	    },{
+	    	path: '/hotel',
+	      	name: 'Hotel',
+	      	component: Hotel
 	    }
   	]
 })

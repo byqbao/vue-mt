@@ -400,6 +400,7 @@
 	.goods {
 		font-size: .4rem;
 		color: #666;
+		overflow: hidden;
 	}
 	.goods .title {
 		overflow: hidden;
